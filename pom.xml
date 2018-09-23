@@ -6,13 +6,27 @@
 
     <groupId>silent-flame</groupId>
     <artifactId>apache-karaf-projects</artifactId>
+    <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.karaf.shell</groupId>
-            <artifactId>org.apache.karaf.shell.console</artifactId>
-            <version>3.0.8</version>
-        </dependency>
+    <properties>
+        <felix.plugin.version>4.2.1</felix.plugin.version>
+    </properties>
 
-    </dependencies>
+    <modules>
+        <module>ai-interface-api</module>
+        <module>bundle</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <target>1.8</target>
+                    <source>1.8</source>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
