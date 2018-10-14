@@ -15,6 +15,7 @@
     <modules>
         <module>ai-interface-api</module>
         <module>server</module>
+        <module>minimax</module>
     </modules>
 
     <build>
