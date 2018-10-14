@@ -14,7 +14,7 @@
 
     <modules>
         <module>ai-interface-api</module>
-        <module>bundle</module>
+        <module>server</module>
     </modules>
 
     <build>
